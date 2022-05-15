@@ -80,3 +80,58 @@ ____
 ```Lua
 exports['CADOJRPv2'].getBankBalance(playerid)
 ```
+
+____
+##### Get BankID Wallet/Cash Balance
+**Arguments:** Bank ID (Use getPlayerBankID() or arbirtary value)
+
+**Returns:** Wallet/Cash Balance as Int
+```Lua
+exports['CADOJRPv2'].getWalletBalanceFromBankID(bankid)
+```
+
+____
+##### Get BankID Bank Balance
+**Arguments:** Bank ID (Use getPlayerBankID() or arbirtary value)
+
+**Returns:** Bank Balance as Int
+```Lua
+exports['CADOJRPv2'].getBankBalanceFromBankID(bankid)
+```
+
+____
+##### Add Bank Money to BankID
+**Arguments:** Bank ID, Value
+
+**Returns:** True/False
+```Lua
+exports['CADOJRPv2'].addBankMoney(bankid, 100)
+```
+____
+##### Add Cash/Wallet Money to BankID
+**Arguments:** Bank ID, Value
+
+**Returns:** True/False
+```Lua
+exports['CADOJRPv2'].addWalletMoney(bankid, 100)
+```
+
+____
+##### Remove Bank Money from BankID
+**Warning:** This does not automatically check if they can afford it. This can cause someone to go negative balance.
+**Arguments:** Bank ID, Value
+
+**Returns:** True/False
+```Lua
+exports['CADOJRPv2'].removeBankMoney(bankid, 100)
+```
+____
+##### Remove Cash/Wallet Money from BankID
+**Warning:** This does not automatically check if they can afford it. This can cause someone to go negative balance.
+
+**Arguments:** Bank ID, Value
+
+**Returns:** True/False
+```Lua
+exports['CADOJRPv2'].removeWalletMoney(bankid, 100)
+```
