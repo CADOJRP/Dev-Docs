@@ -42,3 +42,10 @@ ____
 ```Lua
 exports['CADOJRPv2'].consoleMessage('Exploit Detected!', 'error') -- Will display [CADOJRP] [ERROR] Exploit Detected! in the server console.
 ```
+____
+##### Get Player UUID
+**Arguments:** Player ID (or source)
+**Returns:** Player UUID (or null if not found)
+```Lua
+exports['CADOJRPv2'].getPlayerUUID(playerid)
+```
