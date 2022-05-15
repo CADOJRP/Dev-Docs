@@ -55,3 +55,28 @@ ____
 ```Lua
 exports['CADOJRPv2'].getPlayerUUID(playerid)
 ```
+____
+##### Get Player Bank ID
+**Arguments:** Player ID (or source)
+
+**Returns:** Player BankID (or null if not found)
+```Lua
+exports['CADOJRPv2'].getPlayerBankID(playerid)
+```
+____
+##### Get Player Wallet/Cash Balance
+**Arguments:** Player ID (or source)
+
+**Returns:** Wallet/Cash Balance as Int
+```Lua
+exports['CADOJRPv2'].getWalletBalance(playerid)
+```
+
+____
+##### Get Player Bank Balance
+**Arguments:** Player ID (or source)
+
+**Returns:** Bank Balance as Int
+```Lua
+exports['CADOJRPv2'].getBankBalance(playerid)
+```
